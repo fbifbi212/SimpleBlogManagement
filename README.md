@@ -9,7 +9,6 @@ Simple Blog Management is a basic Spring Boot application designed for managing 
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
