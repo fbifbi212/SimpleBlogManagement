@@ -42,6 +42,15 @@ Follow the steps below to set up and run the project on your local machine.
 3. Create a MySQL database named `blogdb`
 4. Update the `application.properties` file with your MySQL credentials
 
+### Usage
+
+Open your web browser and go to http://localhost:8080
+Use the API endpoints for programmatic access to blog posts (e.g., GET /posts/all, POST /posts/add, PUT /posts/update/{id}, DELETE /posts/delete/{id})
+
+### Contributing
+
+Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
+
 ### Build and Run
 
 ```bash
@@ -53,9 +62,6 @@ java -jar target/simple-blog-management-1.0-SNAPSHOT.jar
 
 The application will be accessible at http://localhost:8080.
 
-## Usage
-Open your web browser and go to http://localhost:8080
-Use the API endpoints for programmatic access to blog posts (e.g., GET /posts/all, POST /posts/add, PUT /posts/update/{id}, DELETE /posts/delete/{id})
-## Contributing
-Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
+
+
 ```
