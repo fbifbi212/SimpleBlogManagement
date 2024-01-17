@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog Post List</title>
+  </head>
+  <body>
+    <h1>Blog Post List</h1>
+
+    <table border="1">
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Actions</th>
+      </tr>
+      <tr th:each="post : ${posts}">
+        <td th:text="${post.id}"></td>
+        <td th:text="${post.title}"></td>
+        <td th:text="${post.content}"></td>
+        <td>
+          <a th:href="@{/posts/{id}/edit(id=${post.id})}">Edit</a>
+          <a th:href="@{/posts/{id}/delete(id=${post.id})}">Delete</a>
+        </td>
+      </tr>
+    </table>
+
+    <a href="/posts/new">Create New Post</a>
+  </body>
+</html>
